@@ -1,0 +1,203 @@
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+}
+
+/* Title and Subtitle */
+.contact__title {
+    text-align: center;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.contact__subtitle {
+    text-align: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    margin-bottom: 2rem;
+}
+
+/* Contact Container */
+.contact__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+/* Contact Info Section */
+.contact__content {
+    background: var(--container-color);
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Card */
+.contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact__card {
+    background: var(--container-color);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.contact__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Card Icon */
+.contact__card-icon {
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
+
+/* Contact Card Text */
+.contact__card-title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.contact__card-data {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    margin-bottom: var(--mb-0-75);
+    display: block;
+}
+
+.contact__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.contact__button:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Icon Styling */
+.contact__button i {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+/* Contact Form */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form Group */
+.contact__form-group {
+    position: relative;
+    width: 100%;
+}
+
+/* Floating Labels */
+.contact__form-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+    background: var(--container-color);
+    padding: 0 5px;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Input Styling */
+.contact__input {
+    width: 100%;
+    padding: 1.5rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: none;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+/* Floating Label Animation */
+.contact__input:focus + .contact__form-label,
+.contact__input:not(:placeholder-shown) + .contact__form-label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+
+/* Adjusting Textarea */
+.contact__form-group textarea {
+    resize: none;
+    height: 6rem;
+}
+
+/* Submit Button */
+.contact__form button {
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Breakpoints */
+
+/* For large devices (above 992px) */
+@media screen and (max-width: 992px) {
+    .contact__container {
+        column-gap: 3rem;
+    }
+}
+
+/* For medium devices (768px - 991px) */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+}
+
+/* For small devices (below 576px) */
+@media screen and (max-width: 576px) {
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .contact__info {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact__form {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
