@@ -64,7 +64,7 @@
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: rgba(63, 35, 35, 0.897); /* Changed to black */
+    background-color: rgba(255, 255, 255, 0.6); /* Medium White */
     border-radius: 50%;
 }
 
@@ -72,9 +72,10 @@
     display: block;
     width: 1px;
     height: 100%;
-    background-color: rgb(80, 56, 56); /* Changed to black */
+    background-color: rgba(255, 255, 255, 0.6); /* Medium White */
     transform: translate(6px, -7px);
 }
+
 
 /* Hide the last line after the last timeline dot */
 .qualification__data:last-child .qualification__line {

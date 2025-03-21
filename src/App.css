@@ -9,11 +9,12 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
-  --container-color: #fff;
+  --title-color: hsl(var(--hue), var(--sat), 100%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 80%);
+  --text-color: hsl(var(--hue), var(--sat), 80%);
+  --body-color: #000; /* Changed to Black */
+  --container-color: #1a1a1a; /* Slightly dark gray for containers */
+
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
